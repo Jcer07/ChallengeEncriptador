@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #f4f4fc;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 40px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    top: 40px;
+    left: 40px;
+}
+
+main{
+    width: 100%;
+	height: 100%;
+    display: flex;
+}
+
+.containerTexto{
+    width: 50%;
+    height: 650px;
+    margin: 40px;
+    display: block;
+    position: relative;
+    left: 10%;
+}
+
+.containerResultado{
+    width: 400px;
+    height: 750px;
+    display: flex;
+    position: absolute;
+    left: 65%;
+    top: 40px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+    text-align: center;
+}
+
+.cajaTexto{
+    position: absolute;
+    left: 4%;
+    top: 15%;
+    width: 100%;
+    height: 400px;
+}
+
+textarea{
+    width: 90%;
+    height: 300px;
+    border: 0;
+    outline: none;
+    resize: none;
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    color: #0A3871;
+    cursor: pointer;
+    background-color: #f4f4fc;
+}
+
+textarea::placeholder{
+    color: #0A3871;
+}
+
+.mensajeAlerta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    left: 3%;
+    bottom: 8%;
+}
+
+.mensajeAlerta img{
+    width: 16px;
+    height: 16px;
+}
+
+.mensajeAlerta span{
+    width: 240px;
+    height: 18px;
+
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+    font-style: normal;
+
+    color: #495057;
+    opacity: 0.8;
+}
+
+.containerResultadoTexto{
+    margin: 20px 20px;
+    text-align: left;
+}
+
+.resultadoTexto{
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100%;
+    height: 300px;
+}
+
+.containerImgMunieco{
+    position: relative;
+    left: 5%;
+    top: 5%;
+    margin-top: 40px;
+    width: 90%;
+}
+
+.containerImgMunieco img {
+    width: 100%;
+}
+
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    top: 95%;
+    left: 3%;
+    width: 99%;
+    height: 67px;
+}
+
+.containerMensajes{
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    bottom: 25%;
+}
+
+.containerMensajes h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #343A40;
+    margin-bottom: 10px;
+}
+
+.containerMensajes span {
+    font-weight: 400;
+    color: #495057;
+}
+
+.containerBtnCopiar{
+    position: absolute;
+    left: 10%;
+    bottom: 9%;
+}
+
+.btn{
+    text-align: center;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+	height: 67px;
+
+    border-radius: 24px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btnEncriptar{
+    background-color: #0A3871;
+    color: white;
+}
+
+.btnDesencriptar,
+.btnCopiar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1.5px solid #0A3871;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    /* Modificar estilos según sea necesario para pantallas pequeñas (celulares) */
+
+    header{
+        position: absolute;
+        width: 100%;
+        height: 96px;
+        top: 5%;
+        left: 0%;
+    }
+    main{
+        display: block;
+    }
+
+    .containerTexto{
+        width: 85%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        position: absolute;
+        top: 10%;
+        left: 0;
+    }
+
+    textarea{
+        width: 90%;
+    }
+
+    .botones{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn{
+        width: 95%;
+    }
+
+    .containerResultado{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        position: absolute;
+        top: 125%;
+        left: 5%;
+
+        width: 90%;
+        height: 250px;
+    }
+
+    .containerResultadoTexto{
+        position: absolute;
+        top: 2%;
+        left: 0;
+        right: 2%;
+    }
+
+    .containerImgMunieco{
+        display: none;
+    }
+
+    .containerBtnCopiar{
+        display: flex;
+        flex-direction: column;
+
+        width: 85%;
+        position: absolute;
+        top: 70%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    /* Modificar estilos según sea necesario para pantallas pequeñas (celulares) */
+
+    header{
+        position: absolute;
+        width: 80%;
+        height: 96px;
+        top: 5%;
+        left: 0%;
+    }
+    main{
+        display: block;
+    }
+
+    .containerTexto{
+        width: 90%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+    }
+
+    textarea{
+        width: 90%;
+    }
+
+    .botones{
+        flex-direction: row;
+        width: 95%;
+    }
+
+    .btn{
+        width: 90%;
+    }
+
+    .containerResultado{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        position: absolute;
+        top: 110%;
+        left: 3%;
+
+        width: 95%;
+        height: 250px;
+    }
+
+    .containerResultadoTexto{
+        position: absolute;
+        top: 2%;
+        left: 0;
+        right: 2%;
+    }
+
+    .containerImgMunieco{
+        display: none;
+    }
+
+    .containerBtnCopiar{
+        display: flex;
+        flex-direction: column;
+
+        width: 85%;
+        position: absolute;
+        top: 70%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px){
+    .containerTexto{
+        left: 5%;
+    }
+}

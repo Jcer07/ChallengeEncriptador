@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="ocultarParrafo()">
+
+    <header>
+        <img src="imagenes/Logo.svg" alt="">
+    </header>
+
+    <main>
+        <section class="containerTexto">
+            <section class="cajaTexto">
+                <textarea type="text" class="texto" name="" id="" placeholder="Ingrese el texto aquí"></textarea>
+            </section>
+
+            <section class="mensajeAlerta">
+                <img src="imagenes/alerta.svg" alt="">
+                <span>Las palabras no deben contener tildes</span>
+            </section>
+
+            <section class="botones">
+                <button class="btn btnEncriptar">Encriptar</button>
+                <button class="btn btnDesencriptar">Desencriptar</button>
+            </section>
+        </section>
+        <section class="containerResultado">
+            <div class="containerResultadoTexto">
+                <p class="resultadoTexto">soy el texto de resultado</p>
+            </div>
+
+            <div class="containerImgMunieco">
+                <img src="imagenes/Muñeco.svg" alt="" class="imgMunieco">
+            </div>
+
+            <div class="containerMensajes">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <span>Ingresa el texto que deseas encriptar o desencriptar</span>
+            </div>
+            
+            <div class="containerBtnCopiar">
+                <button class="btn btnCopiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
